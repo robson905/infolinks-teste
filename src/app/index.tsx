@@ -3,7 +3,7 @@ import { blue } from "react-native-reanimated/lib/typescript/Colors";
 
 export default function index () {
 return (
-<View>
+<View style={style.container}>
     <Text style={{ color: "red", fontSize: 22, fontFamily: "", fontWeight: "700", }}>MEU CADASTRO</Text>
     <Text style={style.title2}>Robson Monteiro</Text>
     <Text style={style.title3}>Nascimento: 12/08</Text>
@@ -29,6 +29,14 @@ return (
 }
 
 const style = StyleSheet.create({
+    container:{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "row",
+    },
+
+
     title: {
         color:"red",
         fontSize: 22
